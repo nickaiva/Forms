@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    
+}
+h1, h2 {
+    color: brown;
+}
+#wrapper{
+    text-align: center;
+   background-color: antiquewhite;
+}
+
+form{
+    margin: 0;
+    width: auto;
+}
+
+label{
+    display: block;
+}
+
+input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }
+
+  input:invalid:required {
+    background-image: linear-gradient(to right, tomato,pink);
+  }
+
+  
+/* This is the style of our error messages */
+.error {
+    width  : 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="wrapper">
+        <h1>Form validation</h1>
+       
+                <form action="">
+                    <fieldset>
+                        <legend> Please type in your data:</legend>
+                    <label>
+                        EMail ( at least 7 chars required )
+                        <input type="email" id="email" required minlength="7" maxlength="50" value="lola@mge.com" >
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                    <label> Country (at least 2 chars required)
+                        <input type="text" id="country" required minlength="2" maxlength="50" value="UK">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                    <label> Zip Code ( at least 2 chars required)
+                        <input type="text" id="zip" required minlength="2" maxlength="5" value="12E98">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                    <label> Password (4 to 8 chars required)
+                        <input type="password" id="password" class="password" required minlength="4" maxlength="8" value="lola">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                    <label> Password Confirmation (4 to 8 chars required)
+                        <input type="password" id="confirm" class="password" required minlength="4" maxlength="8" value="lola">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                
+            </fieldset>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Save">
+            
+                </form>
+           <h2 id ="result"></h2>
+    </section>
+    <script src="validation.js"></script>
+</body>
+
+</html>
